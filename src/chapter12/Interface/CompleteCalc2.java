@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.Interface;
 
 public class CompleteCalc2  extends CompleteCalc1{
 
