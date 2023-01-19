@@ -12,7 +12,7 @@ class outer{
 		int num = 100; // final = 재정의 못함
 		
 		class MyRunnable implements Runnable{
-			int localnum = 10;//내부 클래스의 멤버변순
+			int localnum = 10;//내부 클래스의 멤버변수
 			
 			@Override
 			public void run() {
