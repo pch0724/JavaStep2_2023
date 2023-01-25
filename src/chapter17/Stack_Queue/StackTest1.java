@@ -14,7 +14,7 @@ public class StackTest1 {
 		if(st.empty()) { //  스택이 비어있으면 
 			for(int i = 1; i < 6; i++) {
 				st.push(new String("Hi " + i));
-				System.out.println(" 입력" + i + "번째 : " + st.peek());
+				System.out.println("입력 " + i + " 번째 : " + st.peek());
 			}//for
 		}//if
 		
