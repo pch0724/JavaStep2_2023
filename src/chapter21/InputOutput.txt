@@ -1,0 +1,21 @@
+
+** Input : 파일을 읽어들임 // 
+InputStream (최상위 계층) => FileInputStream(☆한글은 깨지기 때문에 FileReader를 통해 읽어야함☆) => BufferedInputStream / DataInputStream (데이터 처리속도 향상을 위한 보조 역할 | 필수는 아님)
+
+** Output : 파일을 작성 
+OutputStream (최상위 계층) => FileOutputStream(Byte단위로 저장함)(☆FileWriter => byte 단위가 아닌 문자단위로 저장☆) => BufferedOutputStream / DataOutputStream (데이터 처리속도 향상을 위한 보조 역할 | 필수는 아님)
+
+
+
+
+**File------ : FileInputStream / FileOutputStream에 포함되어 있음
+*FileReader : 문자단위로 읽음 -> 한글 깨짐 방지
+*FileWriter : 문자단위로 저장
+*InputStreamReader : 바이트 단위로 읽음
+*FileOutputStream : 바이트 단위로 저장
+
+======================================================
+직렬화 : 문자 -> byte로 바꿔서 읽음
+역직렬화 : byte -> 문자로 바꿔서 출력
+
+자바 내 JVM(Heap / Stack)에서 직렬화 및 역직렬화 모두 이루어짐
